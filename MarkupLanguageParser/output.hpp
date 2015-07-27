@@ -2,12 +2,9 @@
 
 #pragma once
 
-#ifndef USE_OS_STANDARD
-#define USE_OS_STANDARD
-#endif
-
 #include "stdafx.hpp"
-#include "stdafxGL.hpp"
+#include <windows.h>
+#include "output.hpp"
 
 class Output{
 public:
@@ -30,13 +27,5 @@ public:
 	static std::string fileStringFix(std::string string);
 private:
 	static int charToInt(char letter);
-	static char intToChar(unsigned int number);
-};
-
-//This class is incomplete
-class SPML{ //SimPlistic Markup Language
-public:
-	static std::string* readStringToArray(std::string inString);
-private:
 	static char intToChar(unsigned int number);
 };
